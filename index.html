@@ -1,9 +1,104 @@
 <!DOCTYPE html>
-<html>
-  <head><title>My Website</title></head>
-  <body><h1>Hello from S3 + GitHub Actions!</h1>
-  <h2>We are hosting a static webiste</h2>
-    <p>Hey!!!!!!!!</p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-  </body>
+    body {
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: white;
+      height: 100vh;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    nav h1 {
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #fdd835;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 80px);
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      max-width: 600px;
+    }
+
+    .hero button {
+      padding: 12px 30px;
+      font-size: 18px;
+      background-color: #fdd835;
+      color: black;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .hero button:hover {
+      background-color: #ffeb3b;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>MySite</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <h2>Welcome to MySite</h2>
+    <p>Discover amazing features and seamless experiences with our modern web platform.</p>
+    <button onclick="alert('You clicked Get Started!')">Get Started</button>
+  </div>
+</body>
 </html>
